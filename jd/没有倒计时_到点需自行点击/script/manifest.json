@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "jd_goods_killing",
+  "version": "1.0",
+  "description": "京东抢购脚本",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://cart.jd.com/*","https://trade.jd.com/*"],
+      "js": ["jd_goods_killing.js"],
+	    "run_at": "document_idle"
+    }
+  ]
+}

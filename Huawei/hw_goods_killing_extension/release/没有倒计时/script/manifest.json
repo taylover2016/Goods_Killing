@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "hw_goods_killing",
+  "version": "1.0",
+  "description": "华为抢购脚本",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.vmall.com/*"],
+      "js": ["hw_goods_killing.js"],
+	    "run_at": "document_idle"
+    }
+  ]
+}

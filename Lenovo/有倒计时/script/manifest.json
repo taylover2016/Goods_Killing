@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "lenovo_goods_killing_countdown",
+  "version": "1.0",
+  "description": "联想抢购脚本（带倒计时）",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://item.lenovo.com.cn/*","https://buy.lenovo.com.cn/*"],
+      "js": ["lenovo_goods_killing.js"],
+	    "run_at": "document_idle"
+    }
+  ]
+}
